@@ -14,7 +14,6 @@ class HelloWorld(Resource):
 
 class Multi(Resource):
 	def get(self, num, num2):
-		# nums = inpStr.split("-")
 		return {"result": num * num2}
 
 api.add_resource(HelloWorld, "/")

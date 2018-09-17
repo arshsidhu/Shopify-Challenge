@@ -1,0 +1,16 @@
+{
+	"name":"Superstore",
+	"orders":{
+		"totPrice":10.3,
+		"productsInOrder":[
+			{"name":"bread", "price":5.3}, 
+			{"name":"cheese", "price":5}
+		]
+	},
+	"products":[
+		{"name":"bread", "price":5.3}, 
+		{"name":"cheese", "price":5}
+		{"name":"chicken", "price":7}
+		{"name":"milk", "price":2.50}
+	]
+}
