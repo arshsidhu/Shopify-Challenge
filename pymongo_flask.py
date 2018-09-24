@@ -37,7 +37,7 @@ def delete():
 	stores = mongo.db.Stores
 	superstore = stores.find_one({"name":"Superstore"})
 	stores.remove(superstore)
-	return "removed"
+	return "removed " 
 
 if __name__ == "__main__":
 	app.run(debug=True)
