@@ -2,6 +2,7 @@ Shopify Challenge Winter 2019
 
 Prerequisites:
 
+
 Python 3.6
 
 Flask (Python Framework)
@@ -10,9 +11,11 @@ PyMongo (Python Distribution)
 
 Installation:
 
+
 Clone the repo and run the python file: "shopify-challenge.py"
 
 Database Schema:
+
 
 Each store follows the schema:
 
