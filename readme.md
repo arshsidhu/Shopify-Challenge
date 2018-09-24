@@ -3,16 +3,15 @@ Shopify Challenge Winter 2019
 Prerequisites:
 
 
-
+```
 Python 3.6
 
-```
 Flask (Python Framework)
 
 PyMongo (Python Distribution)
 
-Installation:
 ```
+Installation:
 
 ```
 Clone the repo and run the python file: "shopify-challenge.py"
@@ -20,10 +19,9 @@ Clone the repo and run the python file: "shopify-challenge.py"
 Database Schema:
 
 
-
 Each store follows the schema:
-
-```{
+```
+{
 
 	name: store_name,
 
@@ -35,8 +33,8 @@ Each store follows the schema:
 ```
 
 Each order follows the schema:
-
-```{
+```
+{
 
 	orderNum: order_number,
 
@@ -50,8 +48,8 @@ Products can follow two different types of schemas
 
 
 When products are not in an order:
-
-```{
+```
+{
 
 	name: name_of_product,
 
@@ -60,8 +58,8 @@ When products are not in an order:
 }
 ```
 When products are in an order:
-
-```{
+```
+{
 
 	name: name_of_product,
 
