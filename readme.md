@@ -89,3 +89,34 @@ Also when sending products in bulk, they must follow the schema:
 For simplicity purposes, I have used MLabs online database service, which allows for a free 500mb service. If more space is needed for testing, you must run a local MongoDB and change the DB_URI value.
 
 There are already two stores in the DB. I have also included a sample json, if my schema was not clear enough
+
+List of Routes:
+
+```
+/
+	Welcome Page, displays all the stores
+/<store-name>
+	Dislpays all the products in the store
+/<store-name>_orders
+	Displays all the orders in the store
+/<store-name>_order_numer_<order-number>
+	Displays specific order
+/delete_<store-name>
+	Deletes store
+/delete_<store-name>/all_orders
+	Deletes all orders in store
+/delete_<store-name>/order_number_<order-number>
+	Deletes specific order
+/delete_<store-name>/product_<product-name>
+	Deletes product from store
+/delete_<store-name>/order_number_<order-number>/product_<product-name>
+	Deletes product from order
+/add_store_<store-name>
+	Adds new store
+/add_<product-name>_<product-price>/<store-name>
+	Adds new product to store
+/<store-name>/add_to_order/<product-name>
+	Starts new order, with product in cart
+/<store-name>/add_to_order_number_<order-number>/<product-name>
+	Adds product to existing order
+```
