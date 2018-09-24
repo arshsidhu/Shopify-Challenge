@@ -69,6 +69,23 @@ When products are in an order:
 
 }
 ```
+
+API:
+
+Just some notes regarding the API
+
+When sending orders they must follow the schema:
+```
+{
+	order:[list_of_products_in_order]
+}
+```
+Also when sending products in bulk, they must follow the schema:
+```
+{
+	products:[list_of_products]
+}
+```
 For simplicity purposes, I have used MLabs online database service, which allows for a free 500mb service. If more space is needed for testing, you must run a local MongoDB and change the DB_URI value.
 
 There are already two stores in the DB. I have also included a sample json, if my schema was not clear enough
